@@ -37,7 +37,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="#intro">Home</a></li>
+							<li><a href="#intro">Home</a></li>
 							<li><a href="#research-interests">Research</a></li>
 							<li><a href="#publications">Publications</a></li>
 							<li><a href="#cv">CV</a></li>
@@ -161,7 +161,7 @@
 					    margin: 0;
 					    line-height: 1.7;
 					    font-size: 0.95rem;
-					    text-align: justify; /* Changes alignment to perfectly justified edges */
+					    text-align: left; /* Changes alignment to perfectly justified edges */
 					  }
 					
 					  /* 3. STRONG TAG FIX: Maroon color for your NGC targets */
@@ -216,11 +216,11 @@
 						.publication-links .button:hover {
 						  background-color: rgba(255,255,255,0.18);
 						}
-						a {
-						  color: #ffffff !important;
+						#contact a {
+						  color: #7aa6ff !important;
 						}
 						
-						a:hover {
+						#contact a:hover {
 						  color: #c94c4c !important;
 						}
 						#cv h3 {
@@ -233,6 +233,12 @@
 						
 						#cv p {
 						  line-height: 1.8;
+						}
+						strong {
+						  color: #c94c4c;
+						}
+						#intro p {
+						  margin-bottom: 1.5rem;
 						}
 					</style>
 				<section id="publications" class="research-section">
