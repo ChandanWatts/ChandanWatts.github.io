@@ -54,52 +54,67 @@
 					  </div>
 					</section>
 					<style>
-
-					.research-section {
-					  padding: 4rem 2rem;
-					  max-width: 1000px;
-					  margin: 0 auto;
-					}
+					  .research-section {
+					    padding: 4rem 2rem;
+					    max-width: 1200px; /* Widened to ensure all 3 fit beautifully */
+					    margin: 0 auto;
+					  }
 					
-					.research-section h2 {
-					  text-align: center;
-					  margin-bottom: 3rem;
-					}
+					  .research-section h2 {
+					    text-align: center;
+					    margin-bottom: 3rem;
+					    color: #ffffff !important; /* Forces the section heading to be white */
+					  }
 					
-					/* CSS Grid for the 3 columns */
-					.grid-container-three {
-					  display: grid;
-					  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-					  gap: 2rem;
-					  max-width: 1200px;
-					  margin: 0 auto;
-					}
+					  /* Forces 1 Row and 3 Columns */
+					  .grid-container-three {
+					    display: grid;
+					    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+					    gap: 2rem;
+					  }
 					
-					/* Styled to match Massively's native box/article styling */
-					.research-card {
-					  background-color: #ffffff; /* Massively's default main background */
-					  border: solid 1px rgba(210, 215, 217, 0.75); /* Massively's default border */
-					  padding: 2rem;
-					  transition: transform 0.2s ease, box-shadow 0.2s ease;
-					}
+					  /* Modern Dark/Glass Card Design */
+					  .research-card {
+					    background-color: rgba(255, 255, 255, 0.03); /* Barely visible white tint */
+					    border: 1px solid rgba(255, 255, 255, 0.15); /* Thin, elegant white border */
+					    border-radius: 12px; /* Smooth, modern rounded corners */
+					    padding: 2.5rem 2rem;
+					    backdrop-filter: blur(10px); /* Gives a modern "frosted glass" effect */
+					    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+					  }
 					
-					/* Adds a subtle lift effect when hovering over the cards */
-					.research-card:hover {
-					  transform: translateY(-4px);
-					  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-					}
+					  /* Sleek Hover Effect */
+					  .research-card:hover {
+					    transform: translateY(-5px);
+					    border-color: rgba(255, 255, 255, 0.5); /* Border brightens on hover */
+					    background-color: rgba(255, 255, 255, 0.08); /* Card brightens slightly */
+					  }
 					
-					.research-card h3 {
-					  font-size: 1.15rem;
-					  margin-top: 0;
-					  margin-bottom: 1rem;
-					}
+					  /* Card Headings */
+					  .research-card h3 {
+					    color: #ffffff !important; /* Pure white */
+					    font-size: 1.15rem;
+					    margin-top: 0;
+					    margin-bottom: 1.2rem;
+					    letter-spacing: 0.1rem;
+					  }
 					
-					.research-card p {
-					  margin: 0;
-					}
+					  /* Card Paragraph Text */
+					  .research-card p {
+					    color: rgba(255, 255, 255, 0.85) !important; /* Soft white for readability */
+					    margin: 0;
+					    line-height: 1.7;
+					    font-size: 0.95rem;
+					    text-align: left; /* Fixes the awkward spacing from your screenshot */
+					  }
+					
+					  /* Mobile Fallback: If someone views it on a phone, it will stack into 1 column so the text doesn't get crushed */
+					  @media screen and (max-width: 980px) {
+					    .grid-container-three {
+					      grid-template-columns: 1fr; 
+					    }
+					  }
 					</style>
-
 				
 
 				<!-- Header -->
