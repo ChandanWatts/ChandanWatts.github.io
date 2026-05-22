@@ -114,11 +114,11 @@
 					
 					  /* Forces 1 Row and 3 Columns */
 					  .grid-container-three {
-					    display: grid;
-					    grid-template-columns: repeat(3, 1fr); 
-					    gap: 2rem;
-						align-items: start;
-					  }
+						  display: grid;
+						  grid-template-columns: repeat(3, minmax(0, 1fr));
+						  gap: 2rem;
+						  align-items: start;
+						}
 					
 					  /* Modern Dark/Glass Card Design */
 					  .research-card {
@@ -131,8 +131,10 @@
 						  transition: transform 0.3s ease,
 						              border-color 0.3s ease,
 						              background-color 0.3s ease;
+						
+						  width: 100%;
+						  box-sizing: border-box;
 						}
-					
 					  .research-card:hover {
 					    transform: translateY(-5px);
 					    border-color: rgba(255, 255, 255, 0.5); 
