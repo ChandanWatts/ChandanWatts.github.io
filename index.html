@@ -54,15 +54,18 @@
 							     <span class="label">LinkedIn</span>
 							  </a>
 							</li>
-							 <li><a href="https://orcid.org/0009-0005-2923-9933" target="_blank"
-							       class="icon solid fa-id-badge">
-							       <span class="label">ORCID</span>
+							 <li><a href="https://orcid.org/0009-0005-2923-9933" target="_blank">
+							       <img src="images/orcid.png"
+							       alt="ORCID"
+							       style="width:28px; vertical-align:middle;">
 							    </a>
 							  </li>
 							  <!-- SciServer -->
 							  <li><a href="https://scixplorer.org/search?d=astrophysics&fq=%7B%21type%3Daqp+v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%5C%2FWatts%2C+C%5C%2FWatts%2C+Chandan%22)&p=1&q=first_author%3A%22Watts%2C+Chandan%22&sort=score+desc&sort=date+desc" target="_blank"
-							       class="icon solid fa-database">
-							       <span class="label">SciX</span>
+							       >
+							       <img src="images/SciX.png"
+							       alt="SciX"
+							       style="width:28px; vertical-align:middle;">
 							    </a>
 							  </li>
 							<li><a href="https://x.com/Watts_Chandan" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -115,24 +118,24 @@
 					  /* Forces 1 Row and 3 Columns */
 					  .grid-container-three {
 						  display: grid;
-						  grid-template-columns: repeat(3, minmax(0, 1fr));
-						  gap: 2rem;
-						  align-items: start;
+						  grid-template-columns: repeat(3, 1fr);
+						  gap: 2.5rem;
 						}
-					
 					  /* Modern Dark/Glass Card Design */
 					  .research-card {
 						  background-color: rgba(255, 255, 255, 0.03);
 						  border: 1px solid rgba(255, 255, 255, 0.15);
 						  border-radius: 12px;
+						
 						  padding: 2.5rem 2rem;
+						
 						  backdrop-filter: blur(10px);
 						
 						  transition: transform 0.3s ease,
 						              border-color 0.3s ease,
 						              background-color 0.3s ease;
 						
-						  width: 100%;
+						  min-height: 640px;
 						  box-sizing: border-box;
 						}
 					  .research-card:hover {
@@ -143,15 +146,16 @@
 					
 					  /* 1. HEADING FIX: Force one line and reduce size slightly to fit */
 					  .research-card h3 {
-					    color: #ffffff !important; 
-					    font-size: 0.95rem; /* Reduced to fit on one line */
-					    white-space: nowrap; /* Forces text to never break into a second line */
-					    overflow: hidden; /* Keeps it strictly inside the box */
-					    text-overflow: ellipsis; /* Adds "..." if the screen is too small */
-					    margin-top: 0;
-					    margin-bottom: 1.2rem;
-					    letter-spacing: 0.05rem;
-					  }
+						  color: #ffffff !important;
+						  font-size: 1rem;
+						
+						  margin-top: 0;
+						  margin-bottom: 1.5rem;
+						
+						  letter-spacing: 0.05rem;
+						
+						  line-height: 1.4;
+						}
 					
 					  /* 2. TEXT FIX: Justified arrangement */
 					  .research-card p {
