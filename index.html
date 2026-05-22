@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Massively by HTML5 UP</title>
+		<title>Chandan Watts | Extragalactic Astrophysics</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,14 +19,86 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						<h1>Star Formation in Galaxy Groups and Clusters</h1>
+						<p>PhD researcher working on how the environment shapes galaxy evolution.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
+					<section id="research-interests" class="research-section">
+					  <h2>Research Focus</h2>
+					  
+					  <div class="grid-container-three">
+					    <!-- Card 1 -->
+					    <article class="research-card">
+					      <h3>Environmental Drivers</h3>
+					      <p> My research focuses on galaxy formation and evolution, especially the role of environment in shaping galaxy properties. 
+							  I study galaxies across different environments, from individual galaxies and groups to dense clusters, to understand 
+							  how processes such as galaxy interactions and mergers influence their evolution. </p>
+					    </article>
+					
+					    <!-- Card 2 -->
+					    <article class="research-card">
+					      <h3>Internal Mechanisms & Morphology</h3>
+					      <p>Using integral-field spectroscopy (MUSE, MaNGA) and multiwavelength data (UV, optical, IR) 
+							  to explore internal evolutionary drivers. This includes tracing star formation, AGN activity, galactic outflows, and the dynamics of barred galaxies.</p>
+					    </article>
+					
+					    <!-- Card 3 -->
+					    <article class="research-card">
+					      <h3>Peculiar Case Studies</h3>
+					      <p> Detailed observational studies of post-interaction/merger galaxies. Current highlights include mapping the intermediate stage of 
+							  polar-ring formation in <strong>NGC 3718</strong> and analyzing an extended and longest tidal tail (~380 kpc) in <strong>NGC 3785</strong> 
+							  that hosts potential ultra-diffuse galaxy (UDG) formation.</p>
+					    </article>
+					  </div>
+					</section>
+
+					.research-section {
+					  padding: 4rem 2rem;
+					  max-width: 1000px;
+					  margin: 0 auto;
+					}
+					
+					.research-section h2 {
+					  text-align: center;
+					  margin-bottom: 3rem;
+					}
+					
+					/* CSS Grid for the 3 columns */
+					.grid-container-three {
+					  display: grid;
+					  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+					  gap: 2rem;
+					  max-width: 1200px;
+					  margin: 0 auto;
+					}
+					
+					/* Styled to match Massively's native box/article styling */
+					.research-card {
+					  background-color: #ffffff; /* Massively's default main background */
+					  border: solid 1px rgba(210, 215, 217, 0.75); /* Massively's default border */
+					  padding: 2rem;
+					  transition: transform 0.2s ease, box-shadow 0.2s ease;
+					}
+					
+					/* Adds a subtle lift effect when hovering over the cards */
+					.research-card:hover {
+					  transform: translateY(-4px);
+					  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+					}
+					
+					.research-card h3 {
+					  font-size: 1.15rem;
+					  margin-top: 0;
+					  margin-bottom: 1rem;
+					}
+					
+					.research-card p {
+					  margin: 0;
+					}
+
+				
 
 				<!-- Header -->
 					<header id="header">
