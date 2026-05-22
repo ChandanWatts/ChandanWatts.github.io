@@ -56,59 +56,67 @@
 					<style>
 					  .research-section {
 					    padding: 4rem 2rem;
-					    max-width: 1200px; /* Widened to ensure all 3 fit beautifully */
+					    max-width: 1200px; 
 					    margin: 0 auto;
 					  }
 					
 					  .research-section h2 {
 					    text-align: center;
 					    margin-bottom: 3rem;
-					    color: #ffffff !important; /* Forces the section heading to be white */
+					    color: #ffffff !important; 
 					  }
 					
 					  /* Forces 1 Row and 3 Columns */
 					  .grid-container-three {
 					    display: grid;
-					    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+					    grid-template-columns: repeat(3, 1fr); 
 					    gap: 2rem;
 					  }
 					
 					  /* Modern Dark/Glass Card Design */
 					  .research-card {
-					    background-color: rgba(255, 255, 255, 0.03); /* Barely visible white tint */
-					    border: 1px solid rgba(255, 255, 255, 0.15); /* Thin, elegant white border */
-					    border-radius: 12px; /* Smooth, modern rounded corners */
+					    background-color: rgba(255, 255, 255, 0.03); 
+					    border: 1px solid rgba(255, 255, 255, 0.15); 
+					    border-radius: 12px; 
 					    padding: 2.5rem 2rem;
-					    backdrop-filter: blur(10px); /* Gives a modern "frosted glass" effect */
+					    backdrop-filter: blur(10px); 
 					    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 					  }
 					
-					  /* Sleek Hover Effect */
 					  .research-card:hover {
 					    transform: translateY(-5px);
-					    border-color: rgba(255, 255, 255, 0.5); /* Border brightens on hover */
-					    background-color: rgba(255, 255, 255, 0.08); /* Card brightens slightly */
+					    border-color: rgba(255, 255, 255, 0.5); 
+					    background-color: rgba(255, 255, 255, 0.08); 
 					  }
 					
-					  /* Card Headings */
+					  /* 1. HEADING FIX: Force one line and reduce size slightly to fit */
 					  .research-card h3 {
-					    color: #ffffff !important; /* Pure white */
-					    font-size: 1.15rem;
+					    color: #ffffff !important; 
+					    font-size: 0.95rem; /* Reduced to fit on one line */
+					    white-space: nowrap; /* Forces text to never break into a second line */
+					    overflow: hidden; /* Keeps it strictly inside the box */
+					    text-overflow: ellipsis; /* Adds "..." if the screen is too small */
 					    margin-top: 0;
 					    margin-bottom: 1.2rem;
-					    letter-spacing: 0.1rem;
+					    letter-spacing: 0.05rem;
 					  }
 					
-					  /* Card Paragraph Text */
+					  /* 2. TEXT FIX: Justified arrangement */
 					  .research-card p {
-					    color: rgba(255, 255, 255, 0.85) !important; /* Soft white for readability */
+					    color: rgba(255, 255, 255, 0.85) !important; 
 					    margin: 0;
 					    line-height: 1.7;
 					    font-size: 0.95rem;
-					    text-align: left; /* Fixes the awkward spacing from your screenshot */
+					    text-align: justify; /* Changes alignment to perfectly justified edges */
 					  }
 					
-					  /* Mobile Fallback: If someone views it on a phone, it will stack into 1 column so the text doesn't get crushed */
+					  /* 3. STRONG TAG FIX: Maroon color for your NGC targets */
+					  .research-card strong {
+					    color: #c94c4c !important; /* Used a slightly brightened maroon so it is actually readable against dark glass */
+					    font-weight: 700;
+					  }
+					
+					  /* Mobile Fallback */
 					  @media screen and (max-width: 980px) {
 					    .grid-container-three {
 					      grid-template-columns: 1fr; 
