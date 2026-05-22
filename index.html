@@ -117,21 +117,25 @@
 					    display: grid;
 					    grid-template-columns: repeat(3, 1fr); 
 					    gap: 2rem;
+						align-items: stretch;
 					  }
 					
 					  /* Modern Dark/Glass Card Design */
 					  .research-card {
-					    background-color: rgba(255, 255, 255, 0.03); 
-					    border: 1px solid rgba(255, 255, 255, 0.15); 
-					    border-radius: 12px; 
-					    padding: 2.5rem 2rem;
-					    backdrop-filter: blur(10px); 
-					    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-						display: flex;
-						flex-direction: column;
-						justify-content: flex-start;
-						height: 100%;
-					  }
+						  background-color: rgba(255, 255, 255, 0.03);
+						  border: 1px solid rgba(255, 255, 255, 0.15);
+						  border-radius: 12px;
+						  padding: 2.5rem 2rem;
+						  backdrop-filter: blur(10px);
+						
+						  transition: transform 0.3s ease,
+						              border-color 0.3s ease,
+						              background-color 0.3s ease;
+						
+						  display: flex;
+						  flex-direction: column;
+						  height: 100%;
+						}
 					
 					  .research-card:hover {
 					    transform: translateY(-5px);
@@ -212,6 +216,24 @@
 						.publication-links .button:hover {
 						  background-color: rgba(255,255,255,0.18);
 						}
+						a {
+						  color: #ffffff !important;
+						}
+						
+						a:hover {
+						  color: #c94c4c !important;
+						}
+						#cv h3 {
+						  color: #ffffff !important;
+						  margin-top: 2.5rem;
+						  margin-bottom: 1rem;
+						  font-size: 1.2rem;
+						  letter-spacing: 0.05rem;
+						}
+						
+						#cv p {
+						  line-height: 1.8;
+						}
 					</style>
 				<section id="publications" class="research-section">
 				  <h2>Selected Publications</h2>
@@ -268,6 +290,165 @@
 				  </div>
 				</section>
 
+				<section id="cv" class="research-section">
+				
+				  <h2>Curriculum Vitae</h2>
+				
+				  <div class="publication-card">
+				
+				    <h3>Education</h3>
+				
+				    <p>
+				      <strong>PhD in Astrophysics</strong><br>
+				      Indian Institute of Astrophysics, Bengaluru<br>
+				      2022 – Present
+				    </p>
+				
+				    <p>
+				      <strong>M.Sc. (Hons.) Physics</strong><br>
+				      Panjab University, Chandigarh<br>
+				      2018 – 2020
+				    </p>
+				
+				    <p>
+				      <strong>B.Sc. (Hons.) Physics</strong><br>
+				      Guru Nanak Dev University, Amritsar<br>
+				      2015 – 2018
+				    </p>
+				
+				    <hr>
+				
+				    <h3>Research Interests</h3>
+				
+				    <p>
+				      Galaxy evolution, galaxy clusters, galaxy interactions,
+				      barred galaxies, IFU spectroscopy, galactic outflows,
+				      and environmental effects on galaxy morphology and star formation.
+				    </p>
+				
+				    <hr>
+				
+				    <h3>Technical Skills</h3>
+				
+				    <p>
+				      <strong>Programming:</strong>
+				      Python, MATLAB, C++, HTML
+				    </p>
+				
+				    <p>
+				      <strong>Astronomy Tools:</strong>
+				      IRAF, GALFIT, Gnuastro, SAOImageDS9, QFitsView
+				    </p>
+				
+				    <p>
+				      <strong>Analysis:</strong>
+				      Integral Field Spectroscopy (IFS),
+				      spectroscopy, photometry, spectral fitting
+				    </p>
+				
+				    <hr>
+				
+				    <h3>Awards & Achievements</h3>
+				
+				    <p>
+				      • UGC-NET Physics JRF & LS (2022)<br>
+				      • GATE Physics Qualified (2021)<br>
+				      • IIT JAM Physics Qualified (2018)<br>
+				      • University 1st Rank Holder in M.Sc. Physics
+				    </p>
+				
+				    <hr>
+				
+				    <h3>Academic Activities</h3>
+				
+				    <p>
+				      • LOC Chair — Workshop on Galaxy Mergers and Their Nuclei (IIA)<br>
+				      • Hands-on Session Instructor — MaNGA IFU Data Analysis Tutorial<br>
+				      • Editor — DOOT Magazine (2023–2025)
+				    </p>
+				
+				    <hr>
+				
+					<h3>Contributed Talks</h3>
+
+					<p>
+					• NSSS 2026, NESAC-ISRO<br>
+					Role of Galaxy Cluster Environments in Shaping Galactic Outflows: Insights from Abell 2199
+					</p>
+
+					<p>
+					• Southern Regional Astronomy Meeting (RAM-XI), CHRIST (Deemed to be University), Bangalore (2026)<br>
+					Role of Cluster Environment in Shaping Galactic Outflows: Insights from Abell 2199
+					</p>
+					
+					<p>
+					• IAU Symposium 403, Córdoba, Spain (2025)<br>
+					Discovery of an Ultra-Extended Tidal Tail and a Candidate Ultra-Diffuse Galaxy in an Isolated Environment: The Case of NGC 3785
+					</p>
+					
+					<p>
+					• CL2025 Galaxy Cluster Meeting, Taipei, Taiwan (2025)<br>
+					Galactic Outflows in Cluster Environments: A Case Study of Abell 2199
+					</p>
+					
+					<p>
+					• ASI Meeting 2025, NIT Rourkela<br>
+					A Tale of NGC 3785: The Formation of an Ultra-Diffuse Galaxy at the End of the Longest Tidal Tail
+					</p>
+					  
+					<p>
+					• NUVA eMeeting 2024: The Impact of UV Surveys in astronomy<br>
+					UV Probe into the Morphology of NGC 3718
+					</p>
+					  
+					
+					<hr>
+					
+					<h3>Posters</h3>
+					
+					<p>
+					• AstroSat Conference 2026: A Decade of AstroSat Observations<br>
+					UV Insights into the Tidally Disturbed Disk Galaxy NGC 3718
+					</p>
+					
+					<p>
+					• Young Astronomers Meet (YAM) 2025<br>
+					Galaxy Properties: From Cluster Cores to Outskirts
+					</p>
+					
+					<p>
+					• ASI Meeting 2024, IISc Bengaluru<br>
+					The UV Study of the Peculiar Galaxy NGC 3718
+					</p>
+
+					<p>
+					• Young Astronomy Meet (YAM) 2024<br>
+					Unravelling the Nature of Tidally Disrupted Galaxy NGC 3718 through UV Observations
+					</p>
+					
+					<hr>
+					
+					<h3>Workshops & Schools</h3>
+					
+					<p>
+					• Workshop on Galaxy Mergers and Their Nuclei (2026)<br>
+					• Working with Euclid Q1: From Data Access to Science (2025)<br>
+					• COSPAR Workshop: A Hands-on Workshop with JWST–UVIT (2025)<br>
+					• 10th Galaxy Evolution Workshop (2024)<br>
+					• Winter School on the Physics of Star Formation (2024)<br>
+					• Michigan Cosmology Summer School (2023)<br>
+					• High-Resolution X-ray Spectroscopy: A Chandra Workshop (2023)<br>
+					• 8th Indo-French Astronomy School: Spectroscopy 3D (2023)<br>
+					• Indo-French CEFIPRA Astronomy Meeting (IFCAM-III) (2023)<br>
+					• First UVEX Community Workshop: Synergies and New Opportunities (2023)<br>
+					• SOKENDAI Asian Winter School (2023)<br>
+					• ICTS Summer School on Gravitational-Wave Astronomy (2022)<br>
+					</p>
+				
+				  </div>
+				
+				</section>
+
 				<section id="contact" class="research-section">
 				  <h2>Contact</h2>
 				
@@ -294,7 +475,7 @@
 				
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Chandan Watts</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
