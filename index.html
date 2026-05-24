@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -309,7 +310,11 @@
 						  width: 100%;
 						  border-radius: 10px;
 						  margin-top: 1rem;
-						  margin-bottom: 1rem;
+						  transition: transform 0.3s ease;
+						}
+						
+						.pub-image:hover {
+						  transform: scale(1.02);
 						}
 					</style>
 				<section id="publications" class="research-section">
@@ -324,6 +329,13 @@
 				      <p>
 				        Watts, Chandan; L, Gothai; Barway, Sudhanshu
 				      </p>
+						<a href="images/Dn4000_morphology_trend_dwarf_low.png"
+					     data-lightbox="publications">
+					
+					    <img src="images/Dn4000_morphology_trend_dwarf_low.png"
+					         class="pub-image"
+					         alt="Distribution of Dwarf and Intermediate-mass gaalxies">
+					  </a>
 				
 				      <div class="publication-links">
 				          <a href="https://scixplorer.org/abs/2026arXiv260519426W/abstract" target="_blank"
@@ -340,6 +352,13 @@
 				      <p>
 				        Watts, Chandan; Barway, Sudhanshu; Bait, Omkar; Wadadekar, Yogesh
 				      </p>
+						<a href="images/blended.png"
+					     data-lightbox="publications">
+					
+					    <img src="images/blended.png"
+					         class="pub-image"
+					         alt="NGC 3785 tidal tail">
+					  </a>
 				
 				      <div class="publication-links">
 				          <a href="https://www.aanda.org/articles/aa/full_html/2024/11/aa52002-24/aa52002-24.html" target="_blank"
@@ -355,6 +374,13 @@
 				
 				      <p>
 				        Watts, Chandan; Das, Mousumi; Barway, Sudhanshu </p>
+						<a href="images/Picture2.jpeg"
+					     data-lightbox="publications">
+					
+					    <img src="images/Picture2.jpeg"
+					         class="pub-image"
+					         alt="NGC 3718 UV view">
+					  </a>
 				
 				      <div class="publication-links">
 				          <a href="https://scixplorer.org/abs/2024ApJ...974..206W/abstract" target="_blank"
@@ -644,5 +670,6 @@
 		      "Last updated: " + updated.toLocaleDateString('en-US', options);
 		  });
 		</script>
+		<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 	</body>
 </html>
