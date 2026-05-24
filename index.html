@@ -594,6 +594,11 @@
 				  </div>
 				</section>
 
+				<p id="last-updated"
+				   style="text-align:center; font-size:0.9rem; opacity:0.7;">
+				Loading last updated date...
+				</p>
+
 				
 				<!-- Copyright -->
 					<div id="copyright">
@@ -614,6 +619,24 @@
 		<a href="#intro" id="backToTop" title="Go to top">
 		  ↑
 		</a>
+      <script data-goatcounter="https://chandanwatts.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
+		<script>
+		fetch("https://api.github.com/repos/chandanwatts/chandanwatts.github.io")
+		  .then(response => response.json())
+		  .then(data => {
+		    const updated = new Date(data.updated_at);
+		
+		    const options = {
+		      year: 'numeric',
+		      month: 'long',
+		      day: 'numeric'
+		    };
+		
+		    document.getElementById("last-updated").innerHTML =
+		      "Last updated: " + updated.toLocaleDateString('en-US', options);
+		  });
+		</script>
 	</body>
 </html>
